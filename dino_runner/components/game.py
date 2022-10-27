@@ -40,17 +40,11 @@ class Game:
 
     def draw(self):
         self.clock.tick(FPS)
-        self.screen.fill((255, 255, 255)) # #ffffff
+        self.screen.fill((255, 255, 255))  #ffffff
         self.draw_background()
         self.player.draw(self.screen)
-<<<<<<< HEAD
-        self.obstacle_manager.draw(self.screen)
-        pygame.display.update()
-        pygame.display.flip()
-=======
         pygame.display.update()  #desenha na tele que esta em constante atualização
         pygame.display.flip()    #ordena oque vai ser desenhado na tela
->>>>>>> 6ce312835cb9bbb87faf90863226cc8d91da3069
 
     def draw_background(self):
         image_width = BG.get_width()
